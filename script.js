@@ -198,3 +198,20 @@ document.querySelectorAll('.ptabs').forEach(list => {
     });
   });
 });
+
+// Job opportunities: filter by teaching / non-teaching
+document.querySelectorAll('.job-filter').forEach(bar => {
+  const buttons = bar.querySelectorAll('button');
+  const jobs = document.querySelectorAll('.job');
+  const count = document.querySelector('.job-count');
+  const apply = f => {
+    let n = 0;
+    jobs.forEach(j => { const show = f === 'all' || j.dataset.cat === f; j.hidden = !show; if (show) n++; });
+    if (count) count.textContent = `Showing ${n} position${n === 1 ? '' : 's'}`;
+  };
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(x => x.setAttribute('aria-pressed', x === b));
+    apply(b.dataset.filter);
+  }));
+  apply('all');
+});

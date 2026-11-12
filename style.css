@@ -562,3 +562,50 @@ nav.main a[aria-current="page"]{background:var(--brand-soft)}
 .ptab-panel .org{padding:8px 0 0}
 .curriculum.ge{margin-top:4px}
 @media (max-width:600px){.pp-enroll{text-align:left}}
+
+/* Job opportunities */
+.jobs-page{padding-top:24px}
+.jobs-intro{font-size:1.05rem;margin-bottom:16px}
+.jobs-stats{margin-bottom:24px}
+.jobs-layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:28px;align-items:start}
+.job-filter{display:flex;flex-wrap:wrap;gap:8px}
+.job-filter button{background:var(--bg-alt);border:1px solid var(--line);border-radius:99px;padding:8px 16px;font:inherit;font-weight:600;font-size:.9rem;color:var(--ink);cursor:pointer}
+.job-filter button[aria-pressed="true"]{background:var(--brand);color:#fff;border-color:var(--brand)}
+.job-count{font-size:.86rem;color:var(--muted);margin:10px 0}
+.job-list{display:grid;gap:14px}
+.job{background:var(--bg);border:1px solid var(--line);border-left:5px solid var(--brand);border-radius:var(--radius);padding:18px 20px}
+.job.closed{border-left-color:var(--line);opacity:.75}
+.job[hidden]{display:none}
+.job-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.job-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.chip.sample{background:#fde8e8;color:#9b1c1c}
+.chip.closed-chip{background:var(--bg-alt);color:var(--muted)}
+.job h3{font-size:1.2rem}
+.job-office{color:var(--muted);font-size:.92rem}
+.job-deadline{text-align:right;background:var(--bg-alt);border-radius:10px;padding:8px 14px}
+.job-deadline span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.job-deadline b{color:var(--brand-dark)}
+.job-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:14px 0;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.job-meta dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.job-meta dd{font-weight:600;font-size:.9rem}
+.job-more summary{cursor:pointer;font-weight:600;color:var(--brand);font-size:.92rem}
+.job-qs{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px;margin-top:10px}
+.qs-table th,.qs-table td{text-align:left;font-size:.86rem;vertical-align:top}
+.qs-table th{width:110px;color:var(--muted)}
+.job-qs h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--accent-dark);margin-bottom:6px}
+.job-qs ul{margin-left:18px;font-size:.88rem;display:grid;gap:4px}
+.job-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.job-closed-btn{background:var(--bg-alt);color:var(--muted);border-color:var(--line);cursor:not-allowed}
+.jobs-side{display:grid;gap:16px;position:sticky;top:96px}
+.side-box{background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+.side-box h2{font-size:1.1rem;margin-bottom:8px}
+.side-box p{font-size:.88rem}
+.side-box > ol{margin:10px 0 0 18px;font-size:.88rem;display:grid;gap:6px}
+.side-note{color:var(--muted);margin-top:10px;font-style:italic}
+.steps{list-style:none;margin:8px 0 0 !important;counter-reset:step}
+.steps li{position:relative;padding-left:36px;counter-increment:step}
+.steps li::before{content:counter(step);position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--brand);color:#fff;font-size:.78rem;font-weight:700;display:grid;place-items:center}
+.steps b{display:block;font-size:.9rem}
+.steps span{color:var(--muted);font-size:.84rem}
+.eeo{border-left:4px solid var(--accent)}
+@media (max-width:1000px){.jobs-layout{grid-template-columns:1fr}.jobs-side{position:static}.job-qs{grid-template-columns:1fr}}
