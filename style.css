@@ -609,3 +609,23 @@ nav.main a[aria-current="page"]{background:var(--brand-soft)}
 .steps span{color:var(--muted);font-size:.84rem}
 .eeo{border-left:4px solid var(--accent)}
 @media (max-width:1000px){.jobs-layout{grid-template-columns:1fr}.jobs-side{position:static}.job-qs{grid-template-columns:1fr}}
+
+/* Job opportunities: two tabs (campus / alumni) */
+.jobs-tabs{margin-bottom:0}
+.jobs-tabs button{font-size:1rem;padding:12px 20px}
+.jobs-panel{background:none;border:0;border-radius:0;padding:20px 0 0}
+.ajob-count{font-size:.86rem;color:var(--muted);margin:10px 0}
+.ajob-list{display:grid;gap:10px}
+.ajob{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;background:var(--bg);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:12px;padding:14px 18px}
+.ajob[hidden]{display:none}
+.ajob h3{font-size:1.08rem}
+.ajob-side{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.ajob .job-tags{margin-bottom:6px}
+.link-list{list-style:none;display:grid;gap:8px;margin-top:6px}
+.link-list a{display:block;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.link-list a:hover{border-color:var(--brand);text-decoration:none}
+.link-list b{display:block;color:var(--brand-dark)}
+.link-list span{font-size:.82rem;color:var(--muted)}
+.ptabs{scroll-margin-top:110px}
+.ptab-panel:focus{outline:none}
+.ptab-panel:focus-visible{outline:2px solid var(--accent);outline-offset:4px}

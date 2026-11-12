@@ -132,195 +132,318 @@
 <section class="jobs-page">
   <!-- SAMPLE postings for the layout: replace with the HR office's actual vacancies before announcing the site -->
   <div class="wrap">
-    <p class="jobs-intro">Join the University of Antique Tario-Lim Memorial Campus. Vacancies for teaching and non-teaching positions are posted here, together with their qualification standards and application requirements.</p>
-    <div class="stats jobs-stats">
-      <div class="stat"><b>3</b><span>Open positions</span></div>
-      <div class="stat"><b>2</b><span>Teaching</span></div>
-      <div class="stat"><b>1</b><span>Non-teaching</span></div>
+    <div class="ptabs jobs-tabs" role="tablist" aria-label="Job opportunities">
+      <button type="button" role="tab" id="campus-tab" data-hash="campus" aria-controls="jobs-campus" aria-selected="true" tabindex="0">Campus vacancies</button>
+      <button type="button" role="tab" id="alumni-tab" data-hash="alumni" aria-controls="jobs-alumni" aria-selected="false" tabindex="-1">For alumni: other agencies</button>
     </div>
-
-    <div class="jobs-layout">
-      <div>
-        <div class="job-filter" role="group" aria-label="Filter positions">
-          <button type="button" aria-pressed="true" data-filter="all">All positions</button>
-          <button type="button" aria-pressed="false" data-filter="teaching">Teaching</button>
-          <button type="button" aria-pressed="false" data-filter="non-teaching">Non-teaching</button>
-        </div>
-        <p class="job-count" aria-live="polite"></p>
-        <div class="job-list">
-      <article class="job" data-cat="teaching">
-        <div class="job-top">
-          <div>
-            <div class="job-tags"><span class="chip">Teaching</span><span class="chip done">Open</span><span class="chip sample">Sample posting</span></div>
-            <h3>Instructor I</h3>
-            <p class="job-office">College of Computing and Information Sciences</p>
-          </div>
-          <div class="job-deadline"><span>Deadline</span><b>December 4, 2026</b></div>
-        </div>
-        <dl class="job-meta">
-          <div><dt>Salary grade</dt><dd>SG 12</dd></div>
-          <div><dt>Plantilla item</dt><dd>[Plantilla item no.]</dd></div>
-          <div><dt>Place of assignment</dt><dd>UA Tario-Lim Memorial Campus, Tibiao</dd></div>
-          <div><dt>Status of appointment</dt><dd>Permanent</dd></div>
-        </dl>
-        <details class="job-more" open>
-          <summary>Qualification standards and duties</summary>
-          <div class="job-qs">
-            <table class="data-table qs-table">
-              <caption class="sr-only">Qualification standards</caption>
-              <tbody>
-                <tr><th scope="row">Education</th><td>Master's degree in Computer Science, Information Technology or a related field</td></tr>
-                <tr><th scope="row">Experience</th><td>None required</td></tr>
-                <tr><th scope="row">Training</th><td>None required</td></tr>
-                <tr><th scope="row">Eligibility</th><td>None required (RA 1080 for licensed professions)</td></tr>
-              </tbody>
-            </table>
-            <div>
-              <h4>Duties and responsibilities</h4>
-              <ul><li>Teach undergraduate computing courses</li><li>Advise capstone and research projects</li><li>Take part in research and extension activities of the college</li></ul>
-            </div>
-          </div>
-        </details>
-        <div class="job-actions"><a class="btn gold" href="mailto:tlmc@antiquespride.edu.ph?subject=Application:%20Instructor%20I%2C%20College%20of%20Computing%20and%20Information%20Sciences">Apply by email</a><a class="btn line" href="#how-to-apply">How to apply</a></div>
-      </article>
-      <article class="job" data-cat="teaching">
-        <div class="job-top">
-          <div>
-            <div class="job-tags"><span class="chip">Teaching</span><span class="chip done">Open</span><span class="chip sample">Sample posting</span></div>
-            <h3>Instructor I</h3>
-            <p class="job-office">College of Fisheries</p>
-          </div>
-          <div class="job-deadline"><span>Deadline</span><b>December 4, 2026</b></div>
-        </div>
-        <dl class="job-meta">
-          <div><dt>Salary grade</dt><dd>SG 12</dd></div>
-          <div><dt>Plantilla item</dt><dd>[Plantilla item no.]</dd></div>
-          <div><dt>Place of assignment</dt><dd>UA Tario-Lim Memorial Campus, Tibiao</dd></div>
-          <div><dt>Status of appointment</dt><dd>Permanent</dd></div>
-        </dl>
-        <details class="job-more">
-          <summary>Qualification standards and duties</summary>
-          <div class="job-qs">
-            <table class="data-table qs-table">
-              <caption class="sr-only">Qualification standards</caption>
-              <tbody>
-                <tr><th scope="row">Education</th><td>Master's degree in Fisheries, Aquaculture, Marine Science or a related field</td></tr>
-                <tr><th scope="row">Experience</th><td>None required</td></tr>
-                <tr><th scope="row">Training</th><td>None required</td></tr>
-                <tr><th scope="row">Eligibility</th><td>RA 1080 (Fisheries Technologist Licensure) preferred</td></tr>
-              </tbody>
-            </table>
-            <div>
-              <h4>Duties and responsibilities</h4>
-              <ul><li>Teach fisheries and aquaculture courses</li><li>Supervise laboratory and pond work</li><li>Take part in research and extension activities of the college</li></ul>
-            </div>
-          </div>
-        </details>
-        <div class="job-actions"><a class="btn gold" href="mailto:tlmc@antiquespride.edu.ph?subject=Application:%20Instructor%20I%2C%20College%20of%20Fisheries">Apply by email</a><a class="btn line" href="#how-to-apply">How to apply</a></div>
-      </article>
-      <article class="job" data-cat="non-teaching">
-        <div class="job-top">
-          <div>
-            <div class="job-tags"><span class="chip">Non-teaching</span><span class="chip done">Open</span><span class="chip sample">Sample posting</span></div>
-            <h3>Administrative Aide VI (Clerk III)</h3>
-            <p class="job-office">Office of the Registrar</p>
-          </div>
-          <div class="job-deadline"><span>Deadline</span><b>November 27, 2026</b></div>
-        </div>
-        <dl class="job-meta">
-          <div><dt>Salary grade</dt><dd>SG 6</dd></div>
-          <div><dt>Plantilla item</dt><dd>[Plantilla item no.]</dd></div>
-          <div><dt>Place of assignment</dt><dd>UA Tario-Lim Memorial Campus, Tibiao</dd></div>
-          <div><dt>Status of appointment</dt><dd>Permanent</dd></div>
-        </dl>
-        <details class="job-more">
-          <summary>Qualification standards and duties</summary>
-          <div class="job-qs">
-            <table class="data-table qs-table">
-              <caption class="sr-only">Qualification standards</caption>
-              <tbody>
-                <tr><th scope="row">Education</th><td>Completion of two years of college studies</td></tr>
-                <tr><th scope="row">Experience</th><td>None required</td></tr>
-                <tr><th scope="row">Training</th><td>None required</td></tr>
-                <tr><th scope="row">Eligibility</th><td>Career Service (Subprofessional) First Level Eligibility</td></tr>
-              </tbody>
-            </table>
-            <div>
-              <h4>Duties and responsibilities</h4>
-              <ul><li>Receive and process student records requests</li><li>Encode and file enrollment documents</li><li>Assist clients at the Registrar’s front desk</li></ul>
-            </div>
-          </div>
-        </details>
-        <div class="job-actions"><a class="btn gold" href="mailto:tlmc@antiquespride.edu.ph?subject=Application:%20Administrative%20Aide%20VI%20(Clerk%20III)%2C%20Office%20of%20the%20Registrar">Apply by email</a><a class="btn line" href="#how-to-apply">How to apply</a></div>
-      </article>
-      <article class="job closed" data-cat="non-teaching">
-        <div class="job-top">
-          <div>
-            <div class="job-tags"><span class="chip">Non-teaching</span><span class="chip closed-chip">Closed</span><span class="chip sample">Sample posting</span></div>
-            <h3>Administrative Assistant II</h3>
-            <p class="job-office">Accounting Office</p>
-          </div>
-          <div class="job-deadline"><span>Closed on</span><b>October 30, 2026</b></div>
-        </div>
-        <dl class="job-meta">
-          <div><dt>Salary grade</dt><dd>SG 8</dd></div>
-          <div><dt>Plantilla item</dt><dd>[Plantilla item no.]</dd></div>
-          <div><dt>Place of assignment</dt><dd>UA Tario-Lim Memorial Campus, Tibiao</dd></div>
-          <div><dt>Status of appointment</dt><dd>Permanent</dd></div>
-        </dl>
-        <details class="job-more">
-          <summary>Qualification standards and duties</summary>
-          <div class="job-qs">
-            <table class="data-table qs-table">
-              <caption class="sr-only">Qualification standards</caption>
-              <tbody>
-                <tr><th scope="row">Education</th><td>Completion of two years of college studies</td></tr>
-                <tr><th scope="row">Experience</th><td>1 year of relevant experience</td></tr>
-                <tr><th scope="row">Training</th><td>4 hours of relevant training</td></tr>
-                <tr><th scope="row">Eligibility</th><td>Career Service (Subprofessional) First Level Eligibility</td></tr>
-              </tbody>
-            </table>
-            <div>
-              <h4>Duties and responsibilities</h4>
-              <ul><li>Prepare vouchers and supporting documents</li><li>Maintain records of disbursements</li></ul>
-            </div>
-          </div>
-        </details>
-        <div class="job-actions"><span class="btn job-closed-btn" aria-disabled="true">Applications closed</span><a class="btn line" href="#how-to-apply">How to apply</a></div>
-      </article>
-        </div>
+    <div class="ptab-panel jobs-panel" id="jobs-campus" role="tabpanel" aria-labelledby="campus-tab" tabindex="0">
+      <p class="jobs-intro">Join the University of Antique Tario-Lim Memorial Campus. Vacancies for teaching and non-teaching positions are posted here, together with their qualification standards and application requirements.</p>
+      <div class="stats jobs-stats">
+        <div class="stat"><b>3</b><span>Open positions</span></div>
+        <div class="stat"><b>2</b><span>Teaching</span></div>
+        <div class="stat"><b>1</b><span>Non-teaching</span></div>
       </div>
 
-      <aside class="jobs-side">
-        <div class="side-box" id="how-to-apply">
-          <h2>How to apply</h2>
-          <p>Send the following documents to <a href="mailto:tlmc@antiquespride.edu.ph">tlmc@antiquespride.edu.ph</a> or submit them to the Human Resource Management Office on or before the deadline:</p>
-          <ol>
-            <li>Letter of intent addressed to the University President, stating the position and item number applied for</li>
-            <li>Fully accomplished Personal Data Sheet (CS Form No. 212, Revised 2017) with recent passport-sized photo</li>
-            <li>Work Experience Sheet</li>
-            <li>Photocopy of certificate of eligibility, rating or license</li>
-            <li>Photocopy of transcript of records and diploma</li>
-            <li>Photocopy of certificates of relevant trainings</li>
-            <li>Performance rating in the last rating period, if applicable</li>
-          </ol>
-          <p class="side-note">Incomplete applications will not be processed.</p>
+      <div class="jobs-layout">
+        <div>
+          <div class="job-filter" role="group" aria-label="Filter positions">
+            <button type="button" aria-pressed="true" data-filter="all">All positions</button>
+            <button type="button" aria-pressed="false" data-filter="teaching">Teaching</button>
+            <button type="button" aria-pressed="false" data-filter="non-teaching">Non-teaching</button>
+          </div>
+          <p class="job-count" aria-live="polite"></p>
+          <div class="job-list">
+        <article class="job" data-cat="teaching">
+          <div class="job-top">
+            <div>
+              <div class="job-tags"><span class="chip">Teaching</span><span class="chip done">Open</span><span class="chip sample">Sample posting</span></div>
+              <h3>Instructor I</h3>
+              <p class="job-office">College of Computing and Information Sciences</p>
+            </div>
+            <div class="job-deadline"><span>Deadline</span><b>December 4, 2026</b></div>
+          </div>
+          <dl class="job-meta">
+            <div><dt>Salary grade</dt><dd>SG 12</dd></div>
+            <div><dt>Plantilla item</dt><dd>[Plantilla item no.]</dd></div>
+            <div><dt>Place of assignment</dt><dd>UA Tario-Lim Memorial Campus, Tibiao</dd></div>
+            <div><dt>Status of appointment</dt><dd>Permanent</dd></div>
+          </dl>
+          <details class="job-more" open>
+            <summary>Qualification standards and duties</summary>
+            <div class="job-qs">
+              <table class="data-table qs-table">
+                <caption class="sr-only">Qualification standards</caption>
+                <tbody>
+                  <tr><th scope="row">Education</th><td>Master's degree in Computer Science, Information Technology or a related field</td></tr>
+                  <tr><th scope="row">Experience</th><td>None required</td></tr>
+                  <tr><th scope="row">Training</th><td>None required</td></tr>
+                  <tr><th scope="row">Eligibility</th><td>None required (RA 1080 for licensed professions)</td></tr>
+                </tbody>
+              </table>
+              <div>
+                <h4>Duties and responsibilities</h4>
+                <ul><li>Teach undergraduate computing courses</li><li>Advise capstone and research projects</li><li>Take part in research and extension activities of the college</li></ul>
+              </div>
+            </div>
+          </details>
+          <div class="job-actions"><a class="btn gold" href="mailto:tlmc@antiquespride.edu.ph?subject=Application:%20Instructor%20I%2C%20College%20of%20Computing%20and%20Information%20Sciences">Apply by email</a><a class="btn line" href="#how-to-apply">How to apply</a></div>
+        </article>
+        <article class="job" data-cat="teaching">
+          <div class="job-top">
+            <div>
+              <div class="job-tags"><span class="chip">Teaching</span><span class="chip done">Open</span><span class="chip sample">Sample posting</span></div>
+              <h3>Instructor I</h3>
+              <p class="job-office">College of Fisheries</p>
+            </div>
+            <div class="job-deadline"><span>Deadline</span><b>December 4, 2026</b></div>
+          </div>
+          <dl class="job-meta">
+            <div><dt>Salary grade</dt><dd>SG 12</dd></div>
+            <div><dt>Plantilla item</dt><dd>[Plantilla item no.]</dd></div>
+            <div><dt>Place of assignment</dt><dd>UA Tario-Lim Memorial Campus, Tibiao</dd></div>
+            <div><dt>Status of appointment</dt><dd>Permanent</dd></div>
+          </dl>
+          <details class="job-more">
+            <summary>Qualification standards and duties</summary>
+            <div class="job-qs">
+              <table class="data-table qs-table">
+                <caption class="sr-only">Qualification standards</caption>
+                <tbody>
+                  <tr><th scope="row">Education</th><td>Master's degree in Fisheries, Aquaculture, Marine Science or a related field</td></tr>
+                  <tr><th scope="row">Experience</th><td>None required</td></tr>
+                  <tr><th scope="row">Training</th><td>None required</td></tr>
+                  <tr><th scope="row">Eligibility</th><td>RA 1080 (Fisheries Technologist Licensure) preferred</td></tr>
+                </tbody>
+              </table>
+              <div>
+                <h4>Duties and responsibilities</h4>
+                <ul><li>Teach fisheries and aquaculture courses</li><li>Supervise laboratory and pond work</li><li>Take part in research and extension activities of the college</li></ul>
+              </div>
+            </div>
+          </details>
+          <div class="job-actions"><a class="btn gold" href="mailto:tlmc@antiquespride.edu.ph?subject=Application:%20Instructor%20I%2C%20College%20of%20Fisheries">Apply by email</a><a class="btn line" href="#how-to-apply">How to apply</a></div>
+        </article>
+        <article class="job" data-cat="non-teaching">
+          <div class="job-top">
+            <div>
+              <div class="job-tags"><span class="chip">Non-teaching</span><span class="chip done">Open</span><span class="chip sample">Sample posting</span></div>
+              <h3>Administrative Aide VI (Clerk III)</h3>
+              <p class="job-office">Office of the Registrar</p>
+            </div>
+            <div class="job-deadline"><span>Deadline</span><b>November 27, 2026</b></div>
+          </div>
+          <dl class="job-meta">
+            <div><dt>Salary grade</dt><dd>SG 6</dd></div>
+            <div><dt>Plantilla item</dt><dd>[Plantilla item no.]</dd></div>
+            <div><dt>Place of assignment</dt><dd>UA Tario-Lim Memorial Campus, Tibiao</dd></div>
+            <div><dt>Status of appointment</dt><dd>Permanent</dd></div>
+          </dl>
+          <details class="job-more">
+            <summary>Qualification standards and duties</summary>
+            <div class="job-qs">
+              <table class="data-table qs-table">
+                <caption class="sr-only">Qualification standards</caption>
+                <tbody>
+                  <tr><th scope="row">Education</th><td>Completion of two years of college studies</td></tr>
+                  <tr><th scope="row">Experience</th><td>None required</td></tr>
+                  <tr><th scope="row">Training</th><td>None required</td></tr>
+                  <tr><th scope="row">Eligibility</th><td>Career Service (Subprofessional) First Level Eligibility</td></tr>
+                </tbody>
+              </table>
+              <div>
+                <h4>Duties and responsibilities</h4>
+                <ul><li>Receive and process student records requests</li><li>Encode and file enrollment documents</li><li>Assist clients at the Registrar’s front desk</li></ul>
+              </div>
+            </div>
+          </details>
+          <div class="job-actions"><a class="btn gold" href="mailto:tlmc@antiquespride.edu.ph?subject=Application:%20Administrative%20Aide%20VI%20(Clerk%20III)%2C%20Office%20of%20the%20Registrar">Apply by email</a><a class="btn line" href="#how-to-apply">How to apply</a></div>
+        </article>
+        <article class="job closed" data-cat="non-teaching">
+          <div class="job-top">
+            <div>
+              <div class="job-tags"><span class="chip">Non-teaching</span><span class="chip closed-chip">Closed</span><span class="chip sample">Sample posting</span></div>
+              <h3>Administrative Assistant II</h3>
+              <p class="job-office">Accounting Office</p>
+            </div>
+            <div class="job-deadline"><span>Closed on</span><b>October 30, 2026</b></div>
+          </div>
+          <dl class="job-meta">
+            <div><dt>Salary grade</dt><dd>SG 8</dd></div>
+            <div><dt>Plantilla item</dt><dd>[Plantilla item no.]</dd></div>
+            <div><dt>Place of assignment</dt><dd>UA Tario-Lim Memorial Campus, Tibiao</dd></div>
+            <div><dt>Status of appointment</dt><dd>Permanent</dd></div>
+          </dl>
+          <details class="job-more">
+            <summary>Qualification standards and duties</summary>
+            <div class="job-qs">
+              <table class="data-table qs-table">
+                <caption class="sr-only">Qualification standards</caption>
+                <tbody>
+                  <tr><th scope="row">Education</th><td>Completion of two years of college studies</td></tr>
+                  <tr><th scope="row">Experience</th><td>1 year of relevant experience</td></tr>
+                  <tr><th scope="row">Training</th><td>4 hours of relevant training</td></tr>
+                  <tr><th scope="row">Eligibility</th><td>Career Service (Subprofessional) First Level Eligibility</td></tr>
+                </tbody>
+              </table>
+              <div>
+                <h4>Duties and responsibilities</h4>
+                <ul><li>Prepare vouchers and supporting documents</li><li>Maintain records of disbursements</li></ul>
+              </div>
+            </div>
+          </details>
+          <div class="job-actions"><span class="btn job-closed-btn" aria-disabled="true">Applications closed</span><a class="btn line" href="#how-to-apply">How to apply</a></div>
+        </article>
+          </div>
         </div>
-        <div class="side-box">
-          <h2>Selection process</h2>
-          <ol class="steps">
-            <li><b>Submission</b><span>Applicants send complete documents before the deadline.</span></li>
-            <li><b>Initial screening</b><span>Applications are checked against the qualification standards.</span></li>
-            <li><b>Assessment</b><span>Qualified applicants take the examination, demonstration teaching or interview.</span></li>
-            <li><b>Deliberation</b><span>The Human Resource Merit Promotion and Selection Board evaluates the applicants.</span></li>
-            <li><b>Appointment</b><span>The appointing authority selects and appoints the applicant.</span></li>
-          </ol>
+
+        <aside class="jobs-side">
+          <div class="side-box" id="how-to-apply">
+            <h2>How to apply</h2>
+            <p>Send the following documents to <a href="mailto:tlmc@antiquespride.edu.ph">tlmc@antiquespride.edu.ph</a> or submit them to the Human Resource Management Office on or before the deadline:</p>
+            <ol>
+              <li>Letter of intent addressed to the University President, stating the position and item number applied for</li>
+              <li>Fully accomplished Personal Data Sheet (CS Form No. 212, Revised 2017) with recent passport-sized photo</li>
+              <li>Work Experience Sheet</li>
+              <li>Photocopy of certificate of eligibility, rating or license</li>
+              <li>Photocopy of transcript of records and diploma</li>
+              <li>Photocopy of certificates of relevant trainings</li>
+              <li>Performance rating in the last rating period, if applicable</li>
+            </ol>
+            <p class="side-note">Incomplete applications will not be processed.</p>
+          </div>
+          <div class="side-box">
+            <h2>Selection process</h2>
+            <ol class="steps">
+              <li><b>Submission</b><span>Applicants send complete documents before the deadline.</span></li>
+              <li><b>Initial screening</b><span>Applications are checked against the qualification standards.</span></li>
+              <li><b>Assessment</b><span>Qualified applicants take the examination, demonstration teaching or interview.</span></li>
+              <li><b>Deliberation</b><span>The Human Resource Merit Promotion and Selection Board evaluates the applicants.</span></li>
+              <li><b>Appointment</b><span>The appointing authority selects and appoints the applicant.</span></li>
+            </ol>
+          </div>
+          <div class="side-box eeo">
+            <h2>Equal opportunity</h2>
+            <p>The University of Antique adheres to the Equal Employment Opportunity Principle. There is no discrimination in the selection of employees on account of age, sex, sexual orientation and gender identity, civil status, disability, religion, ethnicity, or political affiliation.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div class="ptab-panel jobs-panel" id="jobs-alumni" role="tabpanel" aria-labelledby="alumni-tab" tabindex="0" hidden>
+      <!-- SAMPLE openings for the layout: replace with actual postings shared by employers -->
+      <p class="jobs-intro">Job openings from government agencies and private employers, shared for graduates of the University of Antique Tario-Lim Memorial Campus. Apply directly to the employer through the official posting.</p>
+      <div class="jobs-layout">
+        <div>
+          <div class="job-filter alumni-filter" role="group" aria-label="Filter by field"><button type="button" aria-pressed="true" data-field="all">All fields</button><button type="button" aria-pressed="false" data-field="education">Education</button><button type="button" aria-pressed="false" data-field="fisheries">Fisheries</button><button type="button" aria-pressed="false" data-field="business">Business and Management</button><button type="button" aria-pressed="false" data-field="computing">Computing</button></div>
+          <p class="ajob-count" aria-live="polite"></p>
+          <div class="ajob-list">
+          <article class="ajob" data-field="education">
+            <div class="ajob-main">
+              <div class="job-tags"><span class="chip">Education</span><span class="chip">Government</span><span class="chip sample">Sample posting</span></div>
+              <h3>Teacher I (Elementary)</h3>
+              <p class="job-office">[Public school or schools division] &middot; Antique</p>
+            </div>
+            <div class="ajob-side">
+              <div class="job-deadline"><span>Deadline</span><b>December 11, 2026</b></div>
+              <a class="btn line" href="#" aria-label="View posting: Teacher I (Elementary)">View posting <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+          <article class="ajob" data-field="education">
+            <div class="ajob-main">
+              <div class="job-tags"><span class="chip">Education</span><span class="chip">Private</span><span class="chip sample">Sample posting</span></div>
+              <h3>Junior High School Teacher (Mathematics)</h3>
+              <p class="job-office">[Private school] &middot; Iloilo City</p>
+            </div>
+            <div class="ajob-side">
+              <div class="job-deadline"><span>Deadline</span><b>December 5, 2026</b></div>
+              <a class="btn line" href="#" aria-label="View posting: Junior High School Teacher (Mathematics)">View posting <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+          <article class="ajob" data-field="fisheries">
+            <div class="ajob-main">
+              <div class="job-tags"><span class="chip">Fisheries</span><span class="chip">Government</span><span class="chip sample">Sample posting</span></div>
+              <h3>Aquaculturist I</h3>
+              <p class="job-office">[Government fisheries agency] &middot; Western Visayas</p>
+            </div>
+            <div class="ajob-side">
+              <div class="job-deadline"><span>Deadline</span><b>December 15, 2026</b></div>
+              <a class="btn line" href="#" aria-label="View posting: Aquaculturist I">View posting <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+          <article class="ajob" data-field="fisheries">
+            <div class="ajob-main">
+              <div class="job-tags"><span class="chip">Fisheries</span><span class="chip">Private</span><span class="chip sample">Sample posting</span></div>
+              <h3>Hatchery Technician</h3>
+              <p class="job-office">[Aquaculture company] &middot; Antique</p>
+            </div>
+            <div class="ajob-side">
+              <div class="job-deadline"><span>Deadline</span><b>December 18, 2026</b></div>
+              <a class="btn line" href="#" aria-label="View posting: Hatchery Technician">View posting <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+          <article class="ajob" data-field="business">
+            <div class="ajob-main">
+              <div class="job-tags"><span class="chip">Business and Management</span><span class="chip">Private</span><span class="chip sample">Sample posting</span></div>
+              <h3>Front Office Associate</h3>
+              <p class="job-office">[Resort or hotel] &middot; Malay, Aklan</p>
+            </div>
+            <div class="ajob-side">
+              <div class="job-deadline"><span>Deadline</span><b>November 30, 2026</b></div>
+              <a class="btn line" href="#" aria-label="View posting: Front Office Associate">View posting <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+          <article class="ajob" data-field="business">
+            <div class="ajob-main">
+              <div class="job-tags"><span class="chip">Business and Management</span><span class="chip">Government</span><span class="chip sample">Sample posting</span></div>
+              <h3>Administrative Assistant (Municipal Office)</h3>
+              <p class="job-office">[Local government unit] &middot; Antique</p>
+            </div>
+            <div class="ajob-side">
+              <div class="job-deadline"><span>Deadline</span><b>December 2, 2026</b></div>
+              <a class="btn line" href="#" aria-label="View posting: Administrative Assistant (Municipal Office)">View posting <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+          <article class="ajob" data-field="computing">
+            <div class="ajob-main">
+              <div class="job-tags"><span class="chip">Computing</span><span class="chip">Private</span><span class="chip sample">Sample posting</span></div>
+              <h3>Junior Web Developer</h3>
+              <p class="job-office">[IT company] &middot; Iloilo City (hybrid)</p>
+            </div>
+            <div class="ajob-side">
+              <div class="job-deadline"><span>Deadline</span><b>December 20, 2026</b></div>
+              <a class="btn line" href="#" aria-label="View posting: Junior Web Developer">View posting <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+          <article class="ajob" data-field="computing">
+            <div class="ajob-main">
+              <div class="job-tags"><span class="chip">Computing</span><span class="chip">Government</span><span class="chip sample">Sample posting</span></div>
+              <h3>Information Technology Officer I</h3>
+              <p class="job-office">[Government agency] &middot; Western Visayas</p>
+            </div>
+            <div class="ajob-side">
+              <div class="job-deadline"><span>Deadline</span><b>December 9, 2026</b></div>
+              <a class="btn line" href="#" aria-label="View posting: Information Technology Officer I">View posting <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+          </div>
         </div>
-        <div class="side-box eeo">
-          <h2>Equal opportunity</h2>
-          <p>The University of Antique adheres to the Equal Employment Opportunity Principle. There is no discrimination in the selection of employees on account of age, sex, sexual orientation and gender identity, civil status, disability, religion, ethnicity, or political affiliation.</p>
-        </div>
-      </aside>
+        <aside class="jobs-side">
+          <div class="side-box">
+            <h2>Find more jobs</h2>
+            <ul class="link-list">
+              <li><a href="https://csc.gov.ph/career/" target="_blank" rel="noopener"><b>CSC Job Portal</b><span>Government vacancies from the Civil Service Commission</span></a></li>
+              <li><a href="https://philjobnet.gov.ph/" target="_blank" rel="noopener"><b>PhilJobNet</b><span>Government and private jobs from the Department of Labor and Employment</span></a></li>
+            </ul>
+          </div>
+          <div class="side-box">
+            <h2>Are you an employer?</h2>
+            <p>Share your job openings with our alumni. Email the position, qualifications, deadline and link to the official posting to <a href="mailto:tlmc@antiquespride.edu.ph?subject=Job%20opening%20for%20alumni">tlmc@antiquespride.edu.ph</a>.</p>
+          </div>
+          <div class="side-box eeo">
+            <h2>Tips for applicants</h2>
+            <p>Apply only through the employer&rsquo;s official posting or office. Legitimate employers do not ask for payment to process an application.</p>
+          </div>
+        </aside>
+      </div>
     </div>
   </div>
 </section>

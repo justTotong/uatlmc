@@ -186,6 +186,16 @@ document.querySelectorAll('.ptabs').forEach(list => {
     });
     if (focus) tab.focus();
   };
+  // open the tab named in the address (e.g. jobs.html#alumni) and keep the address in step when switching.
+  // data-hash differs from the panel id, so the browser does not jump-scroll to the panel.
+  const key = t => t.dataset.hash || t.getAttribute('aria-controls');
+  const fromHash = () => {
+    const t = tabs.find(x => '#' + key(x) === location.hash);
+    if (t) select(t);
+  };
+  fromHash();
+  window.addEventListener('hashchange', fromHash);
+  tabs.forEach(t => t.addEventListener('click', () => history.replaceState(null, '', '#' + key(t))));
   tabs.forEach((tab, i) => {
     tab.addEventListener('click', () => select(tab));
     tab.addEventListener('keydown', e => {
@@ -200,7 +210,7 @@ document.querySelectorAll('.ptabs').forEach(list => {
 });
 
 // Job opportunities: filter by teaching / non-teaching
-document.querySelectorAll('.job-filter').forEach(bar => {
+document.querySelectorAll('.job-filter:not(.alumni-filter)').forEach(bar => {
   const buttons = bar.querySelectorAll('button');
   const jobs = document.querySelectorAll('.job');
   const count = document.querySelector('.job-count');
@@ -212,6 +222,23 @@ document.querySelectorAll('.job-filter').forEach(bar => {
   buttons.forEach(b => b.addEventListener('click', () => {
     buttons.forEach(x => x.setAttribute('aria-pressed', x === b));
     apply(b.dataset.filter);
+  }));
+  apply('all');
+});
+
+// Job opportunities, alumni tab: filter openings by field
+document.querySelectorAll('.alumni-filter').forEach(bar => {
+  const buttons = bar.querySelectorAll('button');
+  const items = document.querySelectorAll('.ajob');
+  const count = document.querySelector('.ajob-count');
+  const apply = f => {
+    let n = 0;
+    items.forEach(j => { const show = f === 'all' || j.dataset.field === f; j.hidden = !show; if (show) n++; });
+    if (count) count.textContent = `Showing ${n} opening${n === 1 ? '' : 's'}`;
+  };
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(x => x.setAttribute('aria-pressed', x === b));
+    apply(b.dataset.field);
   }));
   apply('all');
 });
