@@ -99,7 +99,7 @@ nav.main .sub a:hover{background:var(--brand-soft);text-decoration:none}
 .panel a:hover{border-color:var(--brand);background:var(--brand-soft);text-decoration:none}
 
 /* ---------- Sections ---------- */
-section{padding:72px 0}
+section{padding:56px 0}
 section.alt{background:var(--bg-alt)}
 .head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:28px;flex-wrap:wrap}
 .head h2{font-size:clamp(1.5rem,2.6vw,2rem)}
@@ -108,7 +108,7 @@ section.alt{background:var(--bg-alt)}
 
 /* Stats strip */
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
-.stat{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;text-align:center}
 .stat b{display:block;font-family:var(--font-head);font-size:2rem;color:var(--brand)}
 .stat span{font-size:.88rem;color:var(--muted)}
 
@@ -341,7 +341,7 @@ nav.main a[aria-current="page"]{background:var(--brand-soft)}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;padding-top:18px;padding-bottom:18px}
 .hero-cta .tag{margin:0}
 .hero-cta .btn.ghost{margin:0}
-.home-hero + .gateway{margin-top:0;padding-top:28px}
+.home-hero + .gateway{margin-top:0;padding-top:20px}
 
 /* College pages */
 .college-intro{padding-top:20px}
@@ -517,3 +517,7 @@ nav.main a[aria-current="page"]{background:var(--brand-soft)}
 /* Colleges page: logo and college name centered on each card */
 .colleges-grid .clogo{display:block;margin:0 auto 14px}
 .colleges-grid .tile h3{text-align:center}
+
+/* Homepage quick facts: compact band right under the "I am a..." box */
+.quick-facts{padding:20px 0 28px}
+.quick-facts .stat b{font-size:1.8rem}
