@@ -528,3 +528,15 @@ nav.main a[aria-current="page"]{background:var(--brand-soft)}
 .fac-program .org{padding-top:12px}
 [class*="college-"] .org-card.top{border-top-color:var(--college)}
 [class*="college-"] .org-card.fac{border-top-color:var(--college)}
+
+/* College pages: curriculum (courses offered per program) */
+.cur-note{color:var(--muted);font-size:.9rem;margin:-4px 0 14px;max-width:none}
+.curriculum{background:var(--bg);border:1px solid var(--line);border-left:5px solid var(--college,var(--brand));border-radius:12px;margin-bottom:10px}
+.curriculum summary{cursor:pointer;padding:14px 18px;font-weight:700;font-family:var(--font-head);color:var(--brand-dark);font-size:1.02rem;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.curriculum summary::-webkit-details-marker{display:none}
+.curriculum summary::after{content:"+";font-family:var(--font-body);font-size:1.3rem;color:var(--brand)}
+.curriculum[open] summary::after{content:"\2212"}
+.curriculum summary span{margin-left:auto;font-family:var(--font-body);font-size:.78rem;font-weight:600;color:var(--muted);background:var(--bg-alt);padding:3px 10px;border-radius:99px}
+.cur-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;padding:4px 18px 18px;border-top:1px solid var(--line)}
+.cur-group h4{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-dark);margin:14px 0 8px}
+.cur-group ul{margin-left:18px;display:grid;gap:4px;font-size:.88rem}
