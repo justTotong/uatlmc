@@ -521,3 +521,10 @@ nav.main a[aria-current="page"]{background:var(--brand-soft)}
 /* Homepage quick facts: compact band right under the "I am a..." box */
 .quick-facts{padding:20px 0 28px}
 .quick-facts .stat b{font-size:1.8rem}
+
+/* College pages: per-program organizational structure (program head -> core faculty) */
+.fac-program{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 8px;margin-bottom:16px}
+.fac-title{font-size:1.05rem;margin-bottom:4px}
+.fac-program .org{padding-top:12px}
+[class*="college-"] .org-card.top{border-top-color:var(--college)}
+[class*="college-"] .org-card.fac{border-top-color:var(--college)}
